@@ -15,11 +15,11 @@ const page = () => {
         <div className={cl.bioDAta}>
           <p className={cl.lebel}>BIOGRAPHY</p>
           <p className={cl.info}>
-            Hi, I'm Himal Hasan. I'm 20 years old and currently studying for a diploma
-             in Computer Science Engineering at KPI. I've been working in web development
+            Hi, Im Himal Hasan. Im 20 years old and currently studying for a diploma
+             in Computer Science Engineering at KPI. Ive been working in web development
               for two years now, and I really enjoy creating new, creative websites.
                I have knowledge in React and Next.js, and I can handle both front-end 
-               and back-end development. I'm always learning and looking to improve my 
+               and back-end development. Im always learning and looking to improve my 
                skills, and I love pushing the boundaries to make innovative web solutions.
 
           </p>
