@@ -1,0 +1,182 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    gap: 50px;
+    padding: 50px 0;
+
+}
+
+.titile {
+    font-weight: 800;
+    font-size: 6rem;
+
+}
+
+.contents {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'biodata image work';
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: end;
+}
+
+.image_container {
+    height: max-content;
+    width: max-content;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0 black;
+    background: gainsboro;
+    grid-area: image;
+
+}
+
+.image {
+    width: 290px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.bioDAta {
+    grid-area: biodata;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lebel {
+    font-weight: 600;
+    font-size: 22px;
+    color: gray;
+}
+
+.info {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.workInfo {
+    grid-area: work;
+}
+
+.info_box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    
+}
+
+.number {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.text {
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    
+        gap: 50px;
+        padding: 50px 0;
+    
+    }
+    
+    .titile {
+        font-weight: 800;
+        font-size: 3rem;
+        text-align: center;
+    
+    }
+    
+    .contents {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            'image'
+            'biodata'
+            'work';
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        justify-items: end;
+    }
+    
+    .image_container {
+        height: max-content;
+        width: max-content;
+        padding: 20px;
+        border: 2px solid;
+        border-radius: 10px;
+        box-shadow: 0px 8px 0 black;
+        background: gainsboro;
+        grid-area: image;
+    
+    }
+    
+    .image {
+        width: 290px;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+    
+    .bioDAta {
+        grid-area: biodata;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .lebel {
+        font-weight: 600;
+        font-size: 16px;
+        color: gray;
+    }
+    
+    .info {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    
+    .workInfo {
+        grid-area: work;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .info_box {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        
+    }
+    
+    .number {
+        font-size: 50px;
+        font-weight: 800;
+    }
+    
+    .text {
+        font-size: 20px;
+    }
+    
+}

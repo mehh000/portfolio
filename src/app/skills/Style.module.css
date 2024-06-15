@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+.skill_container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 60%;
+}
+.skill_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.skill_box:hover{
+    box-shadow: 0 0 7px gray;
+}
+.experiance_container{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+width: 70%;
+gap: 20px;
+justify-content: center;
+}
+.experiance_card{
+border: 1px solid gainsboro;
+padding: 20px;
+border-radius: 10px;
+}
+.experiance_card:hover{
+   box-shadow: 0 0 7px gray; 
+   border: 2px solid gainsboro;
+}
+.myexp{
+font-size: 22px;
+}
