@@ -1,6 +1,5 @@
 import React from 'react'
 import cl from './Style.module.css';
-import Myimage from '../../../public/himal.jpg'
 import Image from 'next/image';
 
 const page = () => {
@@ -10,7 +9,7 @@ const page = () => {
       <p className={cl.titile}>Passion Fuels Purpose!</p>
       <div className={cl.contents}>
         <div className={cl.image_container}>
-          <Image src={Myimage} alt="Mountain" className={cl.image} />
+          <Image src={'/himal0.jpg'} alt="Mountain" className={cl.image} />
         </div>
         <div className={cl.bioDAta}>
           <p className={cl.lebel}>BIOGRAPHY</p>

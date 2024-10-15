@@ -2,7 +2,7 @@
 
 
 import cl from './Style.module.css'; // Import CSS module properly
-import logoImage from '../../../public/logo.png';
+import logoImage from '../../../public/himal2.png';
 import Image from 'next/image';
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from 'next/link';
@@ -41,11 +41,7 @@ const Navber = () => {
             name: "Skills",
             direction: '/skills'
         },
-        {
-            id: 5,
-            name: "Testimonials",
-            direction: '/testimonials'
-        },
+        
     ];
 
     return (
@@ -63,7 +59,7 @@ const Navber = () => {
                 </ul>
                 <div className={cl.theme_change_action}>
                     <MenuIcon onClick={handleNav} className={cl.menuIcon} />
-                    <ToggleMood />
+                    {/* <ToggleMood /> */}
                 </div>
             </div>
             <div className={`${isOpen ? cl.responsiveNavber : cl.nav_menu_list}`}>

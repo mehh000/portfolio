@@ -1,134 +1,227 @@
-
-.homePage{
-    height:  100%;
+/* Updated Home Page Styling */
+.homePage {
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.container{
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 20px;
-}
-.image_container{
-width: 50%;
-display: flex;
-align-items: center;
-justify-content:center ;
+    background: linear-gradient(to right, #f0f4f7, #ffffff);
+    padding: 20px;
 }
 
-.info_container{
-width: 50%;
-display: flex;
-
-flex-direction: column;
-gap: 30px;
-}
-.info_content{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 70%;
-
-}
-.title{
-    font-weight: 800;
-    font-size: 4rem;
-}
-.des_container{
-font-size: 25px;
-}
-.des{
-
-}
-.btn{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-    color: white;
-    background: black;
-    width: 160px;
-    justify-content: center;
-    border: 2px solid black;
-    margin-bottom: 10px;
-}
-.btn:hover{
-    color: rgb(0, 0, 0);
-    background: rgb(216, 216, 216);
-    border: 2px solid black;
-}
-
-@media (max-width: 800px) {
-
-    .homePage{
-        height:  100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .container{
+.container {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 5px;
-    }
-    .image_container{
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image_container {
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content:center ;
-    }
-    .info_container{
-    width: 100%;
+    justify-content: center;
+    
+}
+
+.info_container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+.info_content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: #333;
+    line-height: 1.2;
+    font-family: var(--font-raleway); /* Use the variable here */
+}
+
+.des_container {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.btn {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #007BFF;
+    width: 180px;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    color: #007BFF;
+    background-color: white;
+    border: 2px solid #007BFF;
+}
+
+.button_container{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.socilaIcons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     }
-    .info_content{
-        display: flex;
+
+    .socilaIcon{
+        font-size: 35px !important;
+        }
+
+
+        .socilaIcons {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Spacing between each icon */
+        }
+        
+        .socilaIcon {
+            font-size: 35px !important; /* Icon size */
+            cursor: pointer; /* Change cursor to pointer for better interactivity */
+            transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for effects */
+        }
+        
+        .socilaIcon:hover {
+            
+            transform: scale(1.2); /* Slightly enlarge the icon on hover */
+        }
+        
+        /* Individual icon colors */
+        .facebookIcon {
+            color: #1877F2; /* Facebook blue */
+            font-size: 35px !important; /* Icon size */
+
+        }
+        
+        .linkedinIcon {
+            color: #0A66C2; /* LinkedIn blue */
+            font-size: 35px !important; /* Icon size */
+
+        }
+        
+        .instagramIcon {
+            color: #E1306C; /* Instagram pink */
+            font-size: 35px !important; /* Icon size */
+
+        }
+        
+        .whatsappIcon {
+            color: #25D366; /* WhatsApp green */
+            font-size: 35px !important; /* Icon size */
+
+        }
+        
+        .githubIcon {
+            color: #333; /* GitHub dark color */
+            font-size: 35px !important; /* Icon size */
+
+        }
+        
+        /* Optional: Change color on hover for more interactivity */
+        .facebookIcon:hover {
+            color: #145DBF; /* Darker shade for Facebook */
+        }
+        
+        .linkedinIcon:hover {
+            color: #084182; /* Darker shade for LinkedIn */
+        }
+        
+        .instagramIcon:hover {
+            color: #B02B56; /* Darker shade for Instagram */
+        }
+        
+        .whatsappIcon:hover {
+            color: #1EBE5B; /* Darker shade for WhatsApp */
+        }
+        
+        .githubIcon:hover {
+            color: #000; /* Fully black on hover for GitHub */
+        }
+        
+
+/* Media Queries for Responsiveness */
+@media (max-width: 900px) {
+    .container {
         flex-direction: column;
-        gap: 5px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    
-    }
-    .title{
-        font-weight: 800;
         text-align: center;
-        font-size: 20px;
+        gap: 20px;
     }
-    .des_container{
-    font-size: 12px;
-    text-align: center;
-    padding: 0 10px;
+
+    .image_container, .info_container {
+        width: 100%;
     }
-    .des{
-    
+
+    .title {
+        font-size: 2.5rem;
     }
-    .btn{
+
+    .des_container {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        width: 160px;
+    }
+
+    .button_container{
+   
         display: flex;
         align-items: center;
-        gap: 10px;
-        font-size: 14px;
-        color: white;
-        background: black;
-        width: 130px;
-        justify-content: center;
-        border: 2px solid black;
-    }
-    .btn:hover{
-        color: rgb(0, 0, 0);
-        background: rgb(216, 216, 216);
-        border: 2px solid black;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 20px;
     }
     
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .des_container {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        width: 140px;
+    }
+    .button_container{
+   
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 20px;
+    }
 }

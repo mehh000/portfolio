@@ -1,46 +1,107 @@
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 30px 0;
-}
-.skill_container{
+    padding: 40px 0;
+    background-color: #f5f5f5;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .skill_container {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
-    width: 60%;
-}
-.skill_box{
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
+  }
+  
+  .skill_box {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap: 5px;
-    border: 1px solid gainsboro;
-    border-radius: 10px;
-    padding: 10px 10px;
-}
-.skill_box:hover{
-    box-shadow: 0 0 7px gray;
-}
-.experiance_container{
-display: flex;
-align-items: center;
-flex-wrap: wrap;
-width: 70%;
-gap: 20px;
-justify-content: center;
-}
-.experiance_card{
-border: 1px solid gainsboro;
-padding: 20px;
-border-radius: 10px;
-}
-.experiance_card:hover{
-   box-shadow: 0 0 7px gray; 
-   border: 2px solid gainsboro;
-}
-.myexp{
-font-size: 22px;
-}
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: white;
+    transition: box-shadow 0.3s ease-in-out;
+    max-width: 220px;
+  }
+  
+  .skill_box:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill_label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .experience_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 70%;
+    text-align: center;
+  }
+  
+  .experience_title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .experience_card {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    width: 100%;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .experience_card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .my_exp {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 800px) {
+    .title {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .skill_container {
+      width: 95%;
+    }
+  
+    .experience_container {
+      width: 95%;
+    }
+  
+    .experience_title {
+      font-size: 2rem;
+    }
+  
+    .my_exp {
+      font-size: 18px;
+    }
+  }
+  
