@@ -33,7 +33,7 @@ const Home = () => {
               </div>
             </div>
             <div className={cl.button_container}>
-                 <Button href="/mycv.pdf" download  className={cl.btn} >Resumy <DocumentScannerIcon /></Button>
+                 <Button href="/himalsCV.pdf" download  className={cl.btn} >Resumy <DocumentScannerIcon /></Button>
                 <div className={cl.socilaIcons}>
    <Link href={'https://www.facebook.com/people/Himal-Hasan/pfbid02zKuVwqr9zh2R7nBpyqSZ6qE14E7u1bBfZwTrtUNEXewCLr6bM3ofd9jPGBmQviwdl/'}  >  <FacebookIcon  className={`${cl.facebookIcon}`} /></Link>
    <Link href={'https://www.linkedin.com/in/himal-hasan-808698332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'}>  <LinkedInIcon className={`${cl.linkedinIcon}`} /></Link>
